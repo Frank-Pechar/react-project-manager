@@ -1,9 +1,10 @@
 import NewTask from './NewTask.jsx';
 
 export default function Tasks({ tasks, onAdd, onDelete }) {
+  // To be rendered at the bottom area of project detail display
   return (
     <section>
-      <h2 className="text-2xl font-bold text-stone-700 mb-4">Tasks</h2>
+      <h2 className="text-lg font-bold text-stone-700 mb-4">Tasks</h2>
       <NewTask onAdd={onAdd} />
       {tasks.length === 0 && (
         <p className="text-stone-800 my-4">
@@ -17,6 +18,7 @@ export default function Tasks({ tasks, onAdd, onDelete }) {
               <span>{task.text}</span>
               <button
                 className="text-stone-700 hover:text-red-500"
+                /* onDelete = App.handleDeleteTask */
                 onClick={() => onDelete(task.id)}
               >
                 Clear

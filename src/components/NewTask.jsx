@@ -7,11 +7,15 @@ export default function NewTask({ onAdd }) {
     setEnteredTask(event.target.value);
   }
 
+  // Add a new task
   function handleClick() {
     if (enteredTask.trim() === '') {
       return;
     }
+    /* onAdd = App.handleAddTask */
     onAdd(enteredTask);
+    {
+    }
     setEnteredTask('');
   }
 

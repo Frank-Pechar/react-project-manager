@@ -4,26 +4,31 @@ import Input from './Input.jsx';
 import Modal from './Modal.jsx';
 
 export default function NewProject({ onAdd, onCancel }) {
+  // modal will point to Modal Component
   const modal = useRef();
 
   const title = useRef();
   const description = useRef();
   const dueDate = useRef();
 
+  // Get ref input values
   function handleSave() {
     const enteredTitle = title.current.value;
     const enteredDescription = description.current.value;
     const enteredDueDate = dueDate.current.value;
 
+    // Display error modal if any value is not entered
     if (
       enteredTitle.trim() === '' ||
       enteredDescription.trim() === '' ||
       enteredDueDate.trim() === ''
     ) {
+      // Call Modal.open() {dialog.current.showModal()}
       modal.current.open();
       return;
     }
 
+    // App.handleAddProject(projectData)
     onAdd({
       title: enteredTitle,
       description: enteredDescription,
@@ -33,6 +38,9 @@ export default function NewProject({ onAdd, onCancel }) {
 
   return (
     <>
+      {/* Modal to display input error */}
+      {/* ref={modal} will be forwarded to the Modal component */}
+
       <Modal ref={modal} buttonCaption="Okay">
         <h2 className="text-xl font-bold text-stone-700 my-4">Invalid Input</h2>
         <p className="text-stone-600 mb-4">
@@ -42,7 +50,10 @@ export default function NewProject({ onAdd, onCancel }) {
           Please make sure you provide a valid value for every input field.
         </p>
       </Modal>
+
+      {/* Add Project area of window to the right of ProjectsSidebar */}
       <div className="w-[35rem] mt-16">
+        {/* Cancel and Save - Add Project Buttons */}
         <menu className="flex items-center justify-end gap-4 my-4">
           <li>
             <button
@@ -61,6 +72,8 @@ export default function NewProject({ onAdd, onCancel }) {
             </button>
           </li>
         </menu>
+
+        {/* Input Area for New Project */}
         <div>
           <Input type="text" ref={title} label="Title" />
           <Input ref={description} label="Description" textarea />
