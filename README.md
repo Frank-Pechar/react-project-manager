@@ -13,29 +13,42 @@ This App provides for creating and maintaining a projects list along with tasks 
 
 ## App Functionality
 
-List Monthly Expenses for a Given Year
+Add a Project
 
-  - Select year from: Filter by year drop-down menu
+  - Click Create new project&gt; Button in Main Section, or, Click &lt;+Add Project&gt; Button in sidebar section
+  - Enter Project Title, Description, and Due Date
+  - Click &lt;Save&gt; Button to add project
+  - Click &lt;Cancel&gt; Button to cancel adding new project
 
-Add New Expense to list
+Display a Project and Tasks
+  - Click Project Title in sidebar to display
 
-  - Click &lt;Add New Expense&gt; Button
-  - Enter: Title, Amount, Date
-  - Click &lt;Add Expense&gt; Button
-  
+Remove Project from Project List
+  - Click Project Title in sidebar to select
+  - Click &lt;Delete&gt; Button</li>
+
+Add Tasks to Project
+  - Click Project Title in Sidebar to Select
+  - Enter Task Item
+  - Click &lt;Add Task&gt; Button
+
+Remove Task from Project
+  - Click Project Title in Sidebar to Select
+  - Click &lt;Clear&gt; Button Next to the Task to be Removed
 
 ## React Features and Methods Used
 
-- Passing props data by object or multiple values to components
-- Use of props.children
-- Basic event handling
-- Implemented useState hook for updating data
-- Managed multiple states with one object state or individual state fields
-- Use of state update function parameter within Set State Function to ensure most current state
-- Two way binding of input fields
-- Lifting State Up to parent component
-- Used Derived value based on related State fields
-- Use of list Keys for unique id
-- Styling wrapper component
-
-- Dynamic styling
+  - Processing user input with Refs and Forwarded Refs
+  - Implemented useImperativeHandle to allow access to child (Modal) function within parent (NewProject) to open modal
+  - Use of Portal to render modal into DOM
+  - Rendering and updating state data using useState hook
+  - Use of Set State callback function parameter to ensure most current state
+  - Managed multiple states with one state object and individual values
+  - Passing props data by object and multiple values to components
+  - Use of props.children
+  - Maintaining minimum state management
+  - Two way binding of input fields
+  - Use of list Keys for unique id
+  - Deriving and lifting computed values
+  - Retaining immutability
+  - Tailwind & Dynamic styling
