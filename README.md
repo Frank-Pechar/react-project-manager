@@ -1,15 +1,15 @@
-# Expenses Log App
+# Project Manager App
 ## React Project
 
 ## Description of App Functionality, Features, and Methods
 
-React project I completed from Udemy: React - The Complete Guide 2023 (incl. React Router & Redux) by Maximilian Schwarzmuller. After coding this project I added layout refinements including responsive design mods. Also added comments for educational purposes.
+React project I completed from Udemy: React - The Complete Guide 2023 (incl. React Router & Redux) by Maximilian Schwarzmuller. After coding this project I added layout refinements. Also added comments for educational purposes.
 
-App can be run from: https://frank-pechar-react-expense-tracker.netlify.app/
+App can be run from: https://frank-pechar-react-project-manager.netlify.app/
 
 ## App Description
 
-This App Provides for Adding and Tracking Monthly Expenses by Year
+This App provides for creating and maintaining a projects list along with tasks within each project
 
 ## App Functionality
 
