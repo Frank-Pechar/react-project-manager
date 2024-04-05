@@ -43,7 +43,6 @@ Remove Task from Project
   - Use of Portal to render modal into DOM
   - Rendering and updating state data using useState hook
   - Use of Set State callback function parameter to ensure most current state
-  - Managed multiple states with one state object and individual values
   - Usage of props and props.children
   - Maintaining minimum state management
   - Two way binding of input fields
