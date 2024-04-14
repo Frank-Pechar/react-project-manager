@@ -3,8 +3,8 @@ import NewTask from './NewTask.jsx';
 export default function Tasks({ tasks, onAdd, onDelete }) {
   // To be rendered at the bottom area of project detail display
   return (
-    <section>
-      <h2 className="text-lg font-bold text-stone-700 mb-4">Tasks</h2>
+    <section className="text-md sm:text-lg">
+      <h2 className="font-bold text-stone-700 mb-4">Tasks</h2>
       <NewTask onAdd={onAdd} />
       {tasks.length === 0 && (
         <p className="text-stone-800 my-4">
