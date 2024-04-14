@@ -8,7 +8,7 @@ const Input = forwardRef(function Input({ label, textarea, ...props }, ref) {
   return (
     <p className="flex flex-col gap-1 my-4">
       {/* Input Label */}
-      <label className="text-sm font-bold uppercase text-stone-500">
+      <label className="text-xs md:text-sm font-bold uppercase text-stone-500">
         {label}
       </label>
 

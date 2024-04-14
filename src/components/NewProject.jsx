@@ -52,7 +52,7 @@ export default function NewProject({ onAdd, onCancel }) {
       </Modal>
 
       {/* Add Project area of window to the right of ProjectsSidebar */}
-      <div className="w-[35rem] mt-16">
+      <div className="w-[35rem] mt-16 text-xs md:text-base pr-4 sm:pr-8">
         {/* Cancel and Save - Add Project Buttons */}
         <menu className="flex items-center justify-end gap-4 my-4">
           <li>

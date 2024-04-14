@@ -20,10 +20,10 @@ export default function NewTask({ onAdd }) {
   }
 
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex items-center gap-4 flex-wrap">
       <input
         type="text"
-        className="w-64 px-2 py-1 rounded-sm bg-stone-200"
+        className="max-w-64 px-2 py-1 rounded-sm bg-stone-200"
         onChange={handleChange}
         value={enteredTask}
       />
